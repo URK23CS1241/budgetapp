@@ -1,0 +1,94 @@
+/* App.css */
+
+:root {
+  --primary-color: #4CAF50;
+  --background-color: #f9fafb;
+  --card-background: #ffffff;
+  --text-color-dark: #333333;
+  --danger-color: #e74c3c;
+  --success-color: #27ae60;
+  --border-radius: 8px;
+  --input-height: 40px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color-dark);
+}
+
+.app-container {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 20px;
+  background-color: var(--card-background);
+  border: 1px solid #e0e0e0;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.app-container h2 {
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.app-container input[type="number"] {
+  width: 90%;
+  height: var(--input-height);
+  padding: 0 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  font-size: 16px;
+  color: var(--text-color-dark);
+}
+
+.app-container input[type="number"]:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: 0 0 4px rgba(76, 175, 80, 0.2);
+}
+
+.app-container button {
+  width: 60%;
+  height: var(--input-height);
+  margin-top: 20px;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.app-container button:hover {
+  background-color: #45a049;
+}
+
+.result {
+  margin-top: 30px;
+}
+
+.result .balance {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.result .status-message {
+  margin-top: 8px;
+  font-size: 18px;
+}
+
+.result.positive .balance,
+.result.positive .status-message {
+  color: var(--success-color);
+}
+
+.result.negative .balance,
+.result.negative .status-message {
+  color: var(--danger-color);
+}
