@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 
 function App() {
+  console.log('DEBUG: App component rendered');
   const [income, setIncome] = useState('');
   const [rent, setRent] = useState('');
   const [food, setFood] = useState('');
