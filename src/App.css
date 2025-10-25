@@ -24,7 +24,8 @@ body {
   margin: 60px auto;
   padding: 20px;
   background-color: var(--card-background);
-  border: 1px solid #e0e0e0;
+  /* Temporary debug styling to make the app visible */
+  border: 4px dashed red;
   border-radius: var(--border-radius);
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   text-align: center;
